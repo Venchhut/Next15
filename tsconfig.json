@@ -1,3 +1,6 @@
+//TypeScript configuration
+// type check and role to follow along
+
 {
   "compilerOptions": {
     "target": "ES2017",
