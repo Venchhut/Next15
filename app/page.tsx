@@ -1,3 +1,4 @@
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,27 +45,29 @@ export default async function Home() {
 
       <div className="justify-between space-x-10">
         <div className="flex gap-2 mb-2 ">
-          <Image
-            src="https://plus.unsplash.com/premium_photo-1742404281241-79bbcd1f8dab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Picture of the author"
-            width={200}
-            height={200}
-            className="object-cover rounded-xl mt-5"
-          />
-          <Image
-            src="https://plus.unsplash.com/premium_photo-1742404280631-fc42d69b605c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Picture of the author"
-            width={200}
-            height={200}
-            className="object-cover rounded-xl mt-5"
-          />
-          <Image
-            src="https://images.unsplash.com/photo-1742268350465-35d7baae61fa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Picture of the author"
-            width={200}
-            height={200}
-            className="object-cover rounded-xl mt-5"
-          />
+          <AspectRatio ratio={16 / 9} className="bg-muted">
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1742404281241-79bbcd1f8dab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Picture of the author"
+              width={200}
+              height={200}
+              className="object-cover rounded-xl mt-5"
+            />
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1742404280631-fc42d69b605c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Picture of the author"
+              width={200}
+              height={200}
+              className="object-cover rounded-xl mt-5"
+            />
+            <Image
+              src="https://images.unsplash.com/photo-1742268350465-35d7baae61fa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Picture of the author"
+              width={200}
+              height={200}
+              className="object-cover rounded-xl mt-5"
+            />
+          </AspectRatio>
         </div>
 
         <ul>
